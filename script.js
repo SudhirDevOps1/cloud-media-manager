@@ -201,7 +201,7 @@ async function loadCatalog() {
   }
 
   try {
-    const response = await fetch('./data.json');
+    const response = await fetch('./data.json?t=' + new Date().getTime());
     if (!response.ok) throw new Error('Failed to fetch data.json');
     catalogData = await response.json();
     showToast('Loaded media catalog successfully.', 'success');

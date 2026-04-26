@@ -1,79 +1,42 @@
 {
   "folders": [
     {
-      "name": "Hindi Course",
+      "name": "General Spoken Languages",
       "children": [
         {
-          "name": "PDFs",
-          "items": [
+          "name": "Hindi",
+          "children": [
             {
-              "name": "Hindi Grammar & Vocabulary",
-              "type": "pdf",
-              "url": "https://drive.google.com/file/d/1v3uX5B4G4bC_f8zW7Jp-W7A-V48t-F6n/view",
-              "description": "Complete Hindi grammar guide for intermediate learners, covering noun declensions and sentence structure.",
-              "lang": "hi"
+              "name": "PDFs",
+              "items": [
+                { "name": "Hindi Grammar & Vocabulary", "type": "pdf", "url": "https://drive.google.com/file/d/1v3uX5B4G4bC_f8zW7Jp-W7A-V48t-F6n/view", "description": "Complete Hindi grammar guide for intermediate learners, covering noun declensions and sentence structure.", "lang": "hi" },
+                { "name": "Conversational Phrases", "type": "pdf", "url": "https://www.dropbox.com/s/sample/hindi_phrases.pdf?dl=1", "description": "Daily survival phrases and idioms in Hindi with transliterations.", "lang": "hi" }
+              ]
             },
             {
-              "name": "Conversational Phrases",
-              "type": "pdf",
-              "url": "https://www.dropbox.com/s/sample/hindi_phrases.pdf?dl=1",
-              "description": "Daily survival phrases and idioms in Hindi with transliterations.",
-              "lang": "hi"
+              "name": "Audio Lessons",
+              "items": [
+                { "name": "Lesson 1: Pronunciation & Greetings", "type": "audio", "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "description": "Introduction to Hindi vowels, consonants, and standard formal greetings.", "lang": "hi" },
+                { "name": "Lesson 2: Simple Sentence Building", "type": "audio", "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", "description": "Learning how to build simple subject-object-verb sentences in Hindi.", "lang": "hi" }
+              ]
             }
           ]
         },
         {
-          "name": "Audio Lessons",
-          "items": [
+          "name": "English",
+          "children": [
             {
-              "name": "Lesson 1: Pronunciation & Greetings",
-              "type": "audio",
-              "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-              "description": "Introduction to Hindi vowels, consonants, and standard formal greetings.",
-              "lang": "hi"
+              "name": "Video Lectures",
+              "items": [
+                { "name": "Course Introduction", "type": "youtube", "url": "https://youtu.be/dQw4w9WgXcQ", "description": "Introduction to the English advanced course, syllabus breakdown, and grading criteria.", "lang": "en" },
+                { "name": "Public Speaking Masterclass", "type": "youtube", "url": "https://www.youtube.com/watch?v=i0a61wFaF8A", "description": "Expert techniques for public speaking, managing anxiety, and structuring presentations.", "lang": "en" }
+              ]
             },
             {
-              "name": "Lesson 2: Simple Sentence Building",
-              "type": "audio",
-              "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-              "description": "Learning how to build simple subject-object-verb sentences in Hindi.",
-              "lang": "hi"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "English Course",
-      "children": [
-        {
-          "name": "Video Lectures",
-          "items": [
-            {
-              "name": "Course Introduction",
-              "type": "youtube",
-              "url": "https://youtu.be/dQw4w9WgXcQ",
-              "description": "Introduction to the English advanced course, syllabus breakdown, and grading criteria.",
-              "lang": "en"
-            },
-            {
-              "name": "Public Speaking Masterclass",
-              "type": "youtube",
-              "url": "https://www.youtube.com/watch?v=i0a61wFaF8A",
-              "description": "Expert techniques for public speaking, managing anxiety, and structuring presentations.",
-              "lang": "en"
-            }
-          ]
-        },
-        {
-          "name": "Reading Materials",
-          "items": [
-            {
-              "name": "Advanced Composition PDF",
-              "type": "pdf",
-              "url": "https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf",
-              "description": "Core textbook for the advanced writing course.",
-              "lang": "en"
+              "name": "Reading Materials",
+              "items": [
+                { "name": "Advanced Composition PDF", "type": "pdf", "url": "https://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf", "description": "Core textbook for the advanced writing course.", "lang": "en" }
+              ]
             }
           ]
         }
@@ -85,101 +48,236 @@
         {
           "name": "Cloud Storage Demos",
           "items": [
-            {
-              "name": "Google Drive Video Sample",
-              "type": "video",
-              "url": "https://drive.google.com/file/d/1tW9u4X7uM2p98K5E_m/view",
-              "description": "A video hosted on Google Drive showing a nature walkthrough."
-            },
-            {
-              "name": "OneDrive Document Preview",
-              "type": "pdf",
-              "url": "https://1drv.ms/b/s!AhuL2t2R5P8VpA_G-6g72x",
-              "description": "Shared business PDF report on Microsoft OneDrive."
-            },
-            {
-              "name": "Dropbox Shared Image",
-              "type": "image",
-              "url": "https://www.dropbox.com/s/sample_image.png?raw=1",
-              "description": "A PNG diagram shared from Dropbox (raw view)."
-            },
-            {
-              "name": "Mega.nz Archive Audio",
-              "type": "audio",
-              "url": "https://mega.nz/embed/abc123audio",
-              "description": "Audio sample embedded from Mega cloud storage."
-            },
-            {
-              "name": "Nextcloud Presentation",
-              "type": "pdf",
-              "url": "https://cloud.example.org/index.php/s/N2pW9r94zWdJz8Y/download",
-              "description": "Self-hosted Nextcloud PDF asset."
-            }
+            { "name": "Google Drive Video Sample", "type": "video", "url": "https://drive.google.com/file/d/1tW9u4X7uM2p98K5E_m/view", "description": "A video hosted on Google Drive showing a nature walkthrough." },
+            { "name": "OneDrive Document Preview", "type": "pdf", "url": "https://1drv.ms/b/s!AhuL2t2R5P8VpA_G-6g72x", "description": "Shared business PDF report on Microsoft OneDrive." },
+            { "name": "Dropbox Shared Image", "type": "image", "url": "https://www.dropbox.com/s/sample_image.png?raw=1", "description": "A PNG diagram shared from Dropbox (raw view)." },
+            { "name": "Mega.nz Archive Audio", "type": "audio", "url": "https://mega.nz/embed/abc123audio", "description": "Audio sample embedded from Mega cloud storage." },
+            { "name": "Nextcloud Presentation", "type": "pdf", "url": "https://cloud.example.org/index.php/s/N2pW9r94zWdJz8Y/download", "description": "Self-hosted Nextcloud PDF asset." }
           ]
         },
         {
           "name": "Direct Media Links",
           "items": [
+            { "name": "Nature Relaxation Video", "type": "video", "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "description": "High definition direct MP4 link for testing the custom HTML5 video player." },
+            { "name": "Background Music Track", "type": "audio", "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3", "description": "Direct MP3 stream for custom audio player and waveform visualization." },
+            { "name": "Sample Photography 1", "type": "image", "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200", "description": "High-resolution nature image from Unsplash for testing image previewer." },
+            { "name": "Sample Photography 2", "type": "image", "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200", "description": "Mountain landscape image." },
+            { "name": "Text Document", "type": "pdf", "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "description": "Small dummy PDF file to verify fast embedding and viewer toolbar." },
+            { "name": "Vimeo Sample Video", "type": "video", "url": "https://vimeo.com/148751763", "description": "Vimeo hosted video to test embed/direct toggle support." },
+            { "name": "SoundCloud Audio Track", "type": "audio", "url": "https://soundcloud.com/tycho/tycho-awake", "description": "SoundCloud embedded audio player demonstration." },
+            { "name": "Dailymotion Clip", "type": "video", "url": "https://www.dailymotion.com/video/x8p3u6l", "description": "Dailymotion video embed testing with custom player fallback." },
+            { "name": "GitHub Raw Text File", "type": "pdf", "url": "https://github.com/microsoft/vscode/blob/main/README.md", "description": "GitHub raw file link to test direct raw URL conversion." },
+            { "name": "Imgur Image Sample", "type": "image", "url": "https://imgur.com/gallery/7RfS7", "description": "Imgur gallery image to test direct link extraction." }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTML",
+      "children": [
+        {
+          "name": "Hindi",
+          "children": [
+            { "name": "PDFs", "items": [] },
+            { "name": "Images", "items": [] },
+            { "name": "Resources", "items": [] },
+            { "name": "Videos", "items": [] }
+          ]
+        },
+        {
+          "name": "English",
+          "children": [
             {
-              "name": "Nature Relaxation Video",
-              "type": "video",
-              "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-              "description": "High definition direct MP4 link for testing the custom HTML5 video player."
+              "name": "PDFs",
+              "items": [
+                { "name": "HTML5 Complete Reference", "type": "pdf", "url": "https://www.w3schools.com/html/html5_intro.pdf", "description": "Comprehensive HTML5 tags, attributes, and semantic elements guide.", "lang": "en" },
+                { "name": "HTML Cheat Sheet", "type": "pdf", "url": "https://websitesetup.org/wp-content/uploads/2020/06/HTML-Cheat-Sheet.pdf", "description": "One-page quick reference for HTML elements and attributes.", "lang": "en" }
+              ]
             },
             {
-              "name": "Background Music Track",
-              "type": "audio",
-              "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
-              "description": "Direct MP3 stream for custom audio player and waveform visualization."
+              "name": "Videos",
+              "items": [
+                { "name": "HTML Full Course (FreeCodeCamp)", "type": "youtube", "url": "https://youtu.be/pQN-pnXPaVg", "description": "4-hour complete HTML tutorial covering basics to forms and multimedia.", "lang": "en" },
+                { "name": "HTML Forms & Input Types", "type": "youtube", "url": "https://youtu.be/fNcJuPIZ2WE", "description": "Deep dive into HTML form elements, validation, and input types.", "lang": "en" }
+              ]
             },
             {
-              "name": "Sample Photography 1",
-              "type": "image",
-              "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200",
-              "description": "High-resolution nature image from Unsplash for testing image previewer."
+              "name": "Resources",
+              "items": [
+                { "name": "CodePen - Basic HTML Structure", "type": "link", "url": "https://codepen.io/pen/", "description": "Live HTML editor to experiment with tags and see output instantly." },
+                { "name": "W3Schools TryIt Editor", "type": "link", "url": "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default", "description": "Sandbox environment for testing HTML code snippets." }
+              ]
             },
             {
-              "name": "Sample Photography 2",
-              "type": "image",
-              "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200",
-              "description": "Mountain landscape image."
-            },
-            {
-              "name": "Text Document",
-              "type": "pdf",
-              "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-              "description": "Small dummy PDF file to verify fast embedding and viewer toolbar."
-            },
-            {
-              "name": "Vimeo Sample Video",
-              "type": "video",
-              "url": "https://vimeo.com/148751763",
-              "description": "Vimeo hosted video to test embed/direct toggle support."
-            },
-            {
-              "name": "SoundCloud Audio Track",
-              "type": "audio",
-              "url": "https://soundcloud.com/tycho/tycho-awake",
-              "description": "SoundCloud embedded audio player demonstration."
-            },
-            {
-              "name": "Dailymotion Clip",
-              "type": "video",
-              "url": "https://www.dailymotion.com/video/x8p3u6l",
-              "description": "Dailymotion video embed testing with custom player fallback."
-            },
-            {
-              "name": "GitHub Raw Text File",
-              "type": "pdf",
-              "url": "https://github.com/microsoft/vscode/blob/main/README.md",
-              "description": "GitHub raw file link to test direct raw URL conversion."
-            },
-            {
-              "name": "Imgur Image Sample",
-              "type": "image",
-              "url": "https://imgur.com/gallery/7RfS7",
-              "description": "Imgur gallery image to test direct link extraction."
+              "name": "Images",
+              "items": []
             }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Git & GitHub",
+      "children": [
+        {
+          "name": "Hindi",
+          "children": [
+            { "name": "PDFs", "items": [] },
+            { "name": "Images", "items": [] },
+            { "name": "Resources", "items": [] },
+            { "name": "Videos", "items": [] }
+          ]
+        },
+        {
+          "name": "English",
+          "children": [
+            {
+              "name": "PDFs",
+              "items": [
+                { "name": "Pro Git Book (Official)", "type": "pdf", "url": "https://git-scm.com/book/en/v2/book/PDF/git.pdf", "description": "Full official Pro Git book – all chapters in one PDF.", "lang": "en" },
+                { "name": "GitHub Cheat Sheet", "type": "pdf", "url": "https://education.github.com/git-cheat-sheet-education.pdf", "description": "Official GitHub cheat sheet with common commands and workflows.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Videos",
+              "items": [
+                { "name": "Git & GitHub Crash Course (freeCodeCamp)", "type": "youtube", "url": "https://youtu.be/RGOj5yH7evk", "description": "2-hour beginner friendly Git and GitHub tutorial with hands-on examples.", "lang": "en" },
+                { "name": "Advanced Git Workflows", "type": "youtube", "url": "https://youtu.be/8JJ101D3knE", "description": "Topics like rebasing, cherry-picking, and Git hooks explained.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Resources",
+              "items": [
+                { "name": "GitHub Skills - First Day on GitHub", "type": "link", "url": "https://skills.github.com/", "description": "Interactive GitHub workflow simulation with real repos." },
+                { "name": "Learn Git Branching Game", "type": "link", "url": "https://learngitbranching.js.org/", "description": "Visual and interactive game to master Git branching and merging." }
+              ]
+            },
+            {
+              "name": "Images",
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "children": [
+        {
+          "name": "Hindi",
+          "children": [
+            { "name": "PDFs", "items": [] },
+            { "name": "Images", "items": [] },
+            { "name": "Resources", "items": [] },
+            {
+              "name": "Videos",
+              "items": [
+                { "name": "Python Full Course (CodeWithHarry)", "type": "youtube", "url": "https://youtu.be/gfDE2a7MKjA", "description": "Complete Python tutorial in Hindi for absolute beginners.", "lang": "hi" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "English",
+          "children": [
+            {
+              "name": "PDFs",
+              "items": [
+                { "name": "Automate the Boring Stuff with Python", "type": "pdf", "url": "https://automatetheboringstuff.com/2e/chapter0/", "description": "Free PDF version of the popular Python automation book.", "lang": "en" },
+                { "name": "Python Crash Course (Sample)", "type": "pdf", "url": "https://nosqleducation.org/wp-content/uploads/2024/01/Python-Crash-Course.pdf", "description": "Introductory Python book covering syntax, loops, functions and classes.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Videos",
+              "items": [
+                { "name": "Python OOP Explained", "type": "youtube", "url": "https://youtu.be/Ej_02ICOIgs", "description": "Deep dive into classes, inheritance, and polymorphism in Python.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Resources",
+              "items": [
+                { "name": "Python Practice Problems (LeetCode)", "type": "link", "url": "https://leetcode.com/problemset/all/?difficulty=EASY&topicSlugs=python", "description": "Curated list of easy LeetCode problems to solve with Python." },
+                { "name": "Jupyter Notebooks (Google Colab)", "type": "link", "url": "https://colab.research.google.com/notebooks/intro.ipynb", "description": "Cloud-based interactive Python environment with pre-installed libraries." },
+                { "name": "GitHub - Python Mini Projects", "type": "link", "url": "https://github.com/topics/python-project-beginner", "description": "Collection of beginner-friendly Python projects on GitHub." }
+              ]
+            },
+            {
+              "name": "Audio Lessons",
+              "items": [
+                { "name": "Python Data Types Explained", "type": "audio", "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", "description": "Audio explanation of int, float, string, list, tuple and dict.", "lang": "en" },
+                { "name": "Control Flow – if, for, while", "type": "audio", "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3", "description": "Walkthrough of conditional statements and loops in Python.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Images",
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "children": [
+        {
+          "name": "Hindi",
+          "children": [
+            { "name": "PDFs", "items": [] },
+            { "name": "Images", "items": [] },
+            { "name": "Resources", "items": [] },
+            { "name": "Videos", "items": [] }
+          ]
+        },
+        {
+          "name": "English",
+          "children": [
+            {
+              "name": "PDFs",
+              "items": [
+                { "name": "Eloquent JavaScript", "type": "pdf", "url": "https://eloquentjavascript.net/Eloquent_JavaScript.pdf", "description": "A modern introduction to programming in JavaScript.", "lang": "en" },
+                { "name": "JavaScript Cheat Sheet", "type": "pdf", "url": "https://htmlcheatsheet.com/js/pdf/JavaScript_Cheat_Sheet.pdf", "description": "Quick reference for JavaScript syntax and methods.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Videos",
+              "items": [
+                { "name": "JavaScript Full Course", "type": "youtube", "url": "https://youtu.be/jS4aFq5-91M", "description": "Beginner friendly complete JavaScript tutorial.", "lang": "en" },
+                { "name": "Async JavaScript Tutorial", "type": "youtube", "url": "https://youtu.be/8aGhZQkoFbQ", "description": "Deep dive into Promises, Async/Await and Fetch API.", "lang": "en" }
+              ]
+            },
+            {
+              "name": "Resources",
+              "items": [
+                { "name": "JSFiddle - DOM Manipulation", "type": "link", "url": "https://jsfiddle.net/", "description": "Live editor to practice HTML/CSS/JS together." }
+              ]
+            },
+            {
+              "name": "Images",
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "React",
+      "children": [
+        {
+          "name": "Hindi",
+          "children": [
+            { "name": "PDFs", "items": [] },
+            { "name": "Images", "items": [] },
+            { "name": "Resources", "items": [] },
+            { "name": "Videos", "items": [] }
+          ]
+        },
+        {
+          "name": "English",
+          "children": [
+            { "name": "PDFs", "items": [] },
+            { "name": "Images", "items": [] },
+            { "name": "Resources", "items": [] },
+            { "name": "Videos", "items": [] }
           ]
         }
       ]

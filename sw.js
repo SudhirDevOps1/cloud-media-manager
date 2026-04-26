@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cloud-media-manager-v1';
+const CACHE_NAME = 'cloud-media-manager-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -57,6 +57,22 @@ self.addEventListener('fetch', (event) => {
       url.hostname.includes('googlevideo.com') || 
       url.hostname.includes('soundhelix.com') ||
       url.hostname.includes('unsplash.com')) {
+    return;
+  }
+
+  // Handle data.json with Network-First strategy for live updates
+  if (url.pathname.endsWith('data.json')) {
+    event.respondWith(
+      fetch(event.request).then((networkResponse) => {
+        const responseToCache = networkResponse.clone();
+        caches.open(CACHE_NAME).then((cache) => {
+          cache.put(event.request, responseToCache);
+        });
+        return networkResponse;
+      }).catch(() => {
+        return caches.match(event.request);
+      })
+    );
     return;
   }
 
