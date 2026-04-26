@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Cloud Media Manager</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --text: #e2e8f0;
+      --accent: #38bdf8;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    body.light {
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --accent: #0284c7;
+      --card-bg: rgba(255, 255, 255, 0.8);
+      --border: rgba(0, 0, 0, 0.1);
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+    .back-btn:hover {
+      opacity: 0.9;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Toggle Theme</button>
+  
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> February 19, 2026</p>
+    <p>This Privacy Policy outlines how the <strong>Cloud Media Manager & Viewer</strong> app handles your data. The app is built with a strict offline-first, client-side only approach, adhering to the highest privacy standards set by the PrivMITLab guidelines.</p>
+
+    <h2>1. Data Collection and Tracking</h2>
+    <p>We do <strong>NOT</strong> collect, store, transmit, or share any personal data or information. There are:
+      <ul>
+        <li>NO analytics or trackers.</li>
+        <li>NO third-party advertising or cookie mechanisms.</li>
+        <li>NO user registration or account synchronization with external servers.</li>
+        <li>NO server-side logs of your requests.</li>
+      </ul>
+    </p>
+
+    <h2>2. Cookies</h2>
+    <p>The application does not use any HTTP cookies. We utilize <code>localStorage</code> purely to save your local UI preferences (such as dark mode and temporary edits to the JSON catalog) within your own web browser.</p>
+
+    <h2>3. Cloud Providers & Media Streaming</h2>
+    <p>This application operates as a static client-side wrapper. When you click on a cloud link (e.g., Google Drive, Dropbox, Mega), the application embeds their native iframe players or streams the files directly from their servers to your browser.</p>
+    <p>By using these cloud providers' links, you interact directly with their infrastructure. They may collect metadata such as your IP address or browser characteristics, governed by their own respective privacy policies. This application does not intercept or transmit any credentials or tokens to those providers.</p>
+
+    <h2>4. YouTube Integration</h2>
+    <p>The application integrates the YouTube IFrame Player API for direct playback of YouTube links. Since YouTube is an external Google service, they may track your viewing habits in accordance with their privacy guidelines. No analytical or watch history data is sent back to this application.</p>
+
+    <h2>5. Offline Mode and Service Worker</h2>
+    <p>The application utilizes a Service Worker (<code>sw.js</code>) to cache the core files (HTML, CSS, JS, manifest, and the catalog file) directly on your device. This is done entirely locally to allow the application to function when disconnected from the internet. No cached data is uploaded to any server.</p>
+
+    <h2>6. Direct File Loading (Local Persistence)</h2>
+    <p>Your media catalog resides in <code>data.json</code> which is served from the GitHub repository. If you use the built-in "Apply Changes" feature to update the JSON layout, that modified version is saved to your browser's <code>localStorage</code>. It is never uploaded to any remote server. To permanently update your catalog, you must modify the <code>data.json</code> file in your own GitHub repository directly.</p>
+
+    <h2>7. Contact & Open Source</h2>
+    <p>Because there is no backend server and no data is collected, there is no data to delete or request. The codebase is fully transparent, open-source, and static. You can verify this by inspecting the source code files in your browser or directly on GitHub.</p>
+
+    <a href="index.html" class="back-btn">← Back to App</a>
+  </div>
+
+  <script>
+    // Simple theme management matching the main app
+    function toggleTheme() {
+      const isLight = document.body.classList.toggle('light');
+      localStorage.setItem('cmm-theme', isLight ? 'light' : 'dark');
+      document.getElementById('themeToggle').innerText = isLight ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    // Initialize theme on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('cmm-theme');
+      const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+      const isLight = savedTheme === 'light' || (savedTheme === null && prefersLight);
+      
+      if (isLight) {
+        document.body.classList.add('light');
+      }
+      document.getElementById('themeToggle').innerText = isLight ? '🌙 Dark Mode' : '☀️ Light Mode';
+    });
+  </script>
+</body>
+</html>
