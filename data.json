@@ -110,7 +110,9 @@
             },
             {
               "name": "Images",
-              "items": []
+              "items": [
+                { "name": "Mega.nz HTML Reference Image", "type": "image", "url": "https://mega.nz/file/mCwnjJJY#FpivI93bhoVJaXnsAJQXZTSN22NlzgROR9Gii7UrYa0", "description": "HTML reference image shared via Mega.nz cloud storage.", "lang": "en" }
+              ]
             }
           ]
         }
